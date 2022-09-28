@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Bootstrap CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous"
+        >
+        <title>Práctica 4</title>
+    </head>
+    <body>
+        <div class="card-title ms-2">
+            <h1>Restar</h1>
+        </div>
+        <div class="container mt-3 justify-content-center">
+            <div>
+                <form>
+                    <div class="mb-3">
+                        <label for="number1" class="form-label">Número 1:</label>
+                        <input type="number" class="form-control" id="number1">
+                    </div>
+                    <div class="mb-3">
+                        <label for="number2" class="form-label">Número 2:</label>
+                        <input type="number" class="form-control" id="number2">
+                    </div>
+                    <div class="mb-3">
+                        <label for="number2" class="form-label">Resultado:</label>
+                        <output type="number" name="result" class="form-control" id="result">
+                    </div>
+                    <button type="button" onclick="result.value = (parseInt(number1.value) - parseInt(number2.value))" class="btn btn-primary">Dividir</button>
+                </form>               
+            </div>
+        </div>
+        
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="./js/app.js"></script>
+    </body>
+</html>
