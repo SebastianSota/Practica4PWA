@@ -17,13 +17,13 @@ self.addEventListener('install', (event) => {
     const promiseCache = caches.open('imported-elements').then((cache) =>{
         return cache.addAll(
             [
-                '/',
-                '/index.html',
-                '/pages/dividir.html',
-                '/pages/multiplicar.html',
-                '/pages/restar.html',
-                '/pages/sumar.html',
-                '/js/app.js',
+                './',
+                './index.html',
+                './pages/dividir.html',
+                './pages/multiplicar.html',
+                './pages/restar.html',
+                './pages/sumar.html',
+                './js/app.js',
                 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css',
                 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js'
             ]
